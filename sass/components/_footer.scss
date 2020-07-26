@@ -1,0 +1,180 @@
+.page-footer {
+  color: $primary-bg-color;
+  background-color: $footer-bg-color;
+}
+
+.footer-box {
+  @extend %container;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 45px;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.address-footer {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+
+.logo-footer {
+  color: $primary-bg-color;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 10px;
+  }
+}
+
+.address {
+  margin-bottom: 8px;
+}
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition;
+  margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.contact-footer + a {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.footer-link.social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.footer-icon {
+  fill: $primary-bg-color;
+  transition: background-color $transition, fill $transition;
+}
+// форма підпишиться на россилку
+.footer-title {
+  color: $primary-bg-color;
+  margin-bottom: 20px;
+}
+.footer-label {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $footer-bg-color;
+  padding: 15px;
+  color: $primary-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.footer-btn {
+  @extend %button;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+.icon-letter {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.copyright {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    font-size: 12px;
+    line-height: 2;
+    padding-bottom: 21px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+  }
+}

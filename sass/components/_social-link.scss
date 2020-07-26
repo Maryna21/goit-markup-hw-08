@@ -1,0 +1,38 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background-color $transition, border-radius $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &.linkedin {
+    margin-right: 0;
+  }
+}
+
+.icon-social-link {
+  display: flex;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill $transition;
+
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: $primary-bg-color;
+  }
+}

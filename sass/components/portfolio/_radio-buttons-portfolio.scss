@@ -1,0 +1,56 @@
+.portfolio-page {
+  @extend %container;
+}
+
+.portfolio-title {
+  @extend %visually-hidden;
+}
+
+.filter.list {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
+.filter.list {
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .item:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.menu-nav {
+  background-color: $accent-bg-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border: solid $accent-bg-color;
+  border-radius: 0px 0px 4px 4px;
+  padding: 6px 22px;
+  transition: background-color $transition, color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    cursor: pointer;
+  }
+}
