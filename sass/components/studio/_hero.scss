@@ -24,20 +24,20 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .overlay {
-      background-image: url(../../../images/hero-480-img@2x.jpg);
+      background-image: url(../../images/hero-480-img@2x.jpg);
     }
   }
 
   @media screen and (min-width: 768px) {
     background-color: $gradient;
     background-image: linear-gradient(to right, $gradient, $gradient),
-      url(../../../images/hero-768.jpg);
+      url(../../images/hero-768.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .overlay {
-        background-image: url(../../../images/hero-768@2x.jpg);
+        background-image: url(../../images/hero-768@2x.jpg);
       }
     }
   }
@@ -46,13 +46,13 @@
     height: 600px;
     background-color: $gradient;
     background-image: linear-gradient(to right, $gradient, $gradient),
-      url(../../../images/hero-1600.jpg);
+      url(../../images/hero-1600.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .overlay {
-        background-image: url(../../../images/hero-1600@2x.jpg);
+        background-image: url(../../images/hero-1600@2x.jpg);
       }
     }
   }
